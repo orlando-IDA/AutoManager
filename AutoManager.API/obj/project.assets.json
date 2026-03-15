@@ -89,11 +89,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\test\\Documents\\notes\\Advanced Business Development with .NET\\AutoManager\\AutoManager\\AutoManager.csproj",
-      "projectName": "AutoManager",
-      "projectPath": "C:\\Users\\test\\Documents\\notes\\Advanced Business Development with .NET\\AutoManager\\AutoManager\\AutoManager.csproj",
+      "projectUniqueName": "C:\\Users\\test\\Documents\\notes\\Advanced Business Development with .NET\\AutoManager\\AutoManager.API\\AutoManager.API.csproj",
+      "projectName": "AutoManager.API",
+      "projectPath": "C:\\Users\\test\\Documents\\notes\\Advanced Business Development with .NET\\AutoManager\\AutoManager.API\\AutoManager.API.csproj",
       "packagesPath": "C:\\Users\\test\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\test\\Documents\\notes\\Advanced Business Development with .NET\\AutoManager\\AutoManager\\obj\\",
+      "outputPath": "C:\\Users\\test\\Documents\\notes\\Advanced Business Development with .NET\\AutoManager\\AutoManager.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

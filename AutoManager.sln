@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoManager", "AutoManager\AutoManager.csproj", "{4C31DAF2-A156-4C3D-9ED2-57DF4A76901F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoManager.API", "AutoManager.API\AutoManager.API.csproj", "{4C31DAF2-A156-4C3D-9ED2-57DF4A76901F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoManager.Application", "AutoManager.Application\AutoManager.Application.csproj", "{5E56F052-AE09-453F-AE47-1AEC81A662D4}"
 EndProject
