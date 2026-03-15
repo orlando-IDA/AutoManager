@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "AutoManager.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/AutoManager.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AutoManager.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "AutoManager.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AutoManager.Domain/AutoManager.Domain.csproj",
+      "msbuildProject": "../AutoManager.Domain/AutoManager.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "AutoManager.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\test\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\test\\Documents\\notes\\Advanced Business Development with .NET\\AutoManager\\AutoManager.Domain\\AutoManager.Domain.csproj": {
+              "projectPath": "C:\\Users\\test\\Documents\\notes\\Advanced Business Development with .NET\\AutoManager\\AutoManager.Domain\\AutoManager.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
