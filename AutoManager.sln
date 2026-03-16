@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoManager.Application", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoManager.Domain", "AutoManager.Domain\AutoManager.Domain.csproj", "{EFE3EAE9-A450-4410-9F74-C8A2CC745A4C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{80F64E80-6E62-4322-B9A7-A3C839EF3971}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,5 +57,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EFE3EAE9-A450-4410-9F74-C8A2CC745A4C} = {80F64E80-6E62-4322-B9A7-A3C839EF3971}
+		{5E56F052-AE09-453F-AE47-1AEC81A662D4} = {80F64E80-6E62-4322-B9A7-A3C839EF3971}
+		{4C31DAF2-A156-4C3D-9ED2-57DF4A76901F} = {80F64E80-6E62-4322-B9A7-A3C839EF3971}
 	EndGlobalSection
 EndGlobal
