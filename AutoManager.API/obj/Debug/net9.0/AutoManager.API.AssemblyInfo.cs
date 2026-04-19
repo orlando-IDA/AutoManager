@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoManager.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf4256527ac1e02798084f341b8466e8b4a4c13c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5db9951629a9e2ac7d3a93766ff7234d54b323df")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoManager.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoManager.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
