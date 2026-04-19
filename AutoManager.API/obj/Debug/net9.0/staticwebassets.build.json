@@ -1,12 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "lcctBkWr+DduPn8lblgRoBgFRMmQd0id5Ct/DxorYE8=",
-  "Source": "AutoManager.API",
-  "BasePath": "_content/AutoManager.API",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
-}
+{"Version":1,"Hash":"cDIIBjfT6qXURIkZXl7XIuLYKHPuGj44AOn0OJk1r/Q=","Source":"AutoManager.API","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

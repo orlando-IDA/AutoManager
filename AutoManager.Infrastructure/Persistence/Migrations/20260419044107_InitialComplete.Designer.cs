@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AutoManager.Infrastructure.Persistence.Migrations
 {
     [DbContext(typeof(AutoManagerContext))]
-    [Migration("20260419022113_AddVehicleTable")]
-    partial class AddVehicleTable
+    [Migration("20260419044107_InitialComplete")]
+    partial class InitialComplete
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -68,10 +68,14 @@ namespace AutoManager.Infrastructure.Persistence.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Descricao");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("TEXT");
+                        .HasPrecision(10, 2)
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Preco");
 
                     b.Property<Guid>("ServiceOrderId")
                         .HasColumnType("TEXT");
@@ -80,7 +84,7 @@ namespace AutoManager.Infrastructure.Persistence.Migrations
 
                     b.HasIndex("ServiceOrderId");
 
-                    b.ToTable("OrderItems");
+                    b.ToTable("ItemOrdemServico", (string)null);
                 });
 
             modelBuilder.Entity("AutoManager.Domain.Entities.Payment", b =>
@@ -95,21 +99,26 @@ namespace AutoManager.Infrastructure.Persistence.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Method")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Method")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Metodo");
 
                     b.Property<Guid>("ServiceOrderId")
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("TotalAmount")
-                        .HasColumnType("TEXT");
+                        .HasPrecision(10, 2)
+                        .HasColumnType("TEXT")
+                        .HasColumnName("ValorTotal");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ServiceOrderId")
                         .IsUnique();
 
-                    b.ToTable("Payments");
+                    b.ToTable("Pagamento", (string)null);
                 });
 
             modelBuilder.Entity("AutoManager.Domain.Entities.ServiceOrder", b =>

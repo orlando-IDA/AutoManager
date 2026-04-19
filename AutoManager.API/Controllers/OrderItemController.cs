@@ -9,7 +9,8 @@ namespace AutoManager.API.Controllers;
 /// </summary>
 [Route("api/[controller]")]
 [ApiController]
-public class OrderItemController(IOrderItemRepository orderItemRepository) : ControllerBase
+public class 
+    OrderItemController(IOrderItemRepository orderItemRepository) : ControllerBase
 {
     /// <summary>
     /// Lista todos os itens de uma ordem de serviço.

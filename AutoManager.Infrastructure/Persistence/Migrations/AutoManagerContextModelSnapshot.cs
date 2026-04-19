@@ -96,21 +96,26 @@ namespace AutoManager.Infrastructure.Persistence.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("Method")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Method")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Metodo");
 
                     b.Property<Guid>("ServiceOrderId")
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("TotalAmount")
-                        .HasColumnType("TEXT");
+                        .HasPrecision(10, 2)
+                        .HasColumnType("TEXT")
+                        .HasColumnName("ValorTotal");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ServiceOrderId")
                         .IsUnique();
 
-                    b.ToTable("Payments");
+                    b.ToTable("Pagamento", (string)null);
                 });
 
             modelBuilder.Entity("AutoManager.Domain.Entities.ServiceOrder", b =>
