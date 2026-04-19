@@ -1,4 +1,4 @@
-﻿using AutoManager.Domain.Common;
+using AutoManager.Domain.Common;
 
 namespace AutoManager.Domain.Entities;
 
@@ -7,10 +7,10 @@ public class OrderItem : BaseEntity
     public string Description { get; private set; }
     public decimal Price { get; private set; }
 
-    public int ServiceOrderId { get; private set; }
-    public ServiceOrder ServiceOrder { get; private set; } 
+    public Guid ServiceOrderId { get; private set; }
+    public ServiceOrder ServiceOrder { get; private set; } = null!;
 
-    public OrderItem(string description, decimal price, int serviceOrderId)
+    public OrderItem(string description, decimal price, Guid serviceOrderId)
     {
         if (string.IsNullOrWhiteSpace(description))
             throw new Exception("The description cannot be empty.");

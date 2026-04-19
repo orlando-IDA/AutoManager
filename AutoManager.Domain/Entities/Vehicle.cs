@@ -1,4 +1,4 @@
-﻿using AutoManager.Domain.Common;
+using AutoManager.Domain.Common;
 
 namespace AutoManager.Domain.Entities;
 
@@ -8,12 +8,12 @@ public class Vehicle : BaseEntity
     public string Manufacturer { get; private set; }
     public string Model { get; private set; }
     
-    public int CustomerId { get; private set; }
-    public Customer Customer { get; private set; } 
+    public Guid CustomerId { get; private set; }
+    public Customer Customer { get; private set; } = null!;
     
     public List<ServiceOrder> ServiceOrders { get; private set; } = new();
 
-    public Vehicle(string licensePlate, string manufacturer, string model, int customerId)
+    public Vehicle(string licensePlate, string manufacturer, string model, Guid customerId)
     {
         if (string.IsNullOrWhiteSpace(licensePlate))
             throw new Exception("The license plate is required.");

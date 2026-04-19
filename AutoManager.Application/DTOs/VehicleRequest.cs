@@ -1,28 +1,28 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using AutoManager.Domain.Entities;
 
 namespace AutoManager.Application.DTOs;
 
 public record VehicleRequest(
-    [Required(ErrorMessage = "The Field License Plate is Required.")]
-    [StringLength(8, MinimumLength = 7, ErrorMessage = "License  Plate must be 8 characters long.")]
-    string LicensePlate,
+    [property: Required(ErrorMessage = "A placa é obrigatória")]
+    [property: StringLength(10, MinimumLength = 7, ErrorMessage = "A placa deve ter entre 7 e 10 caracteres")]
+    string licensePlate,
 
-    [Required(ErrorMessage = "The Field Manufacturer is Required.")]
-    [StringLength(50, MinimumLength = 2, ErrorMessage = "Manufacturer must be 2-50 characters long.")]
-    string Manufacturer,
+    [property: Required(ErrorMessage = "A montadora é obrigatória")]
+    [property: StringLength(50, MinimumLength = 2, ErrorMessage = "A montadora deve ter entre 2 e 50 caracteres")]
+    string manufacturer,
 
-    [Required(ErrorMessage = "The field Model is Required.")]
-    string Model,
+    [property: Required(ErrorMessage = "O modelo é obrigatório")]
+    string model,
 
-    [Required(ErrorMessage = "The field Customer(ID) is Required.")]
-    int CustomerId
+    [property: Required(ErrorMessage = "O ID do cliente é obrigatório")]
+    Guid customerId
 )
 {
     public Vehicle ToDomain() => new Vehicle(
-        LicensePlate,
-        Manufacturer,
-        Model,
-        CustomerId
+        licensePlate,
+        manufacturer,
+        model,
+        customerId
     );
 }

@@ -1,24 +1,24 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using AutoManager.Domain.Entities;
 
 namespace AutoManager.Application.DTOs;
 
 public record OrderItemRequest(
-    [Required(ErrorMessage = "The Field 'Description' is Required.")]
-    [StringLength(100, MinimumLength = 3, ErrorMessage = "Description must be between 3 and 100 characters long.")]
-    string Description,
+    [property: Required(ErrorMessage = "A descrição é obrigatória")]
+    [property: StringLength(100, MinimumLength = 3, ErrorMessage = "A descrição deve ter entre 3 e 100 caracteres")]
+    string description,
 
-    [Required(ErrorMessage = "Field 'Price' is Required.")]
-    [Range(0.01, 999999.99, ErrorMessage = "The Price must be greater than zero")]
-    decimal Price,
+    [property: Required(ErrorMessage = "O preço é obrigatório")]
+    [property: Range(0.01, 999999.99, ErrorMessage = "O preço deve ser maior que zero")]
+    decimal price,
 
-    [Required(ErrorMessage = "The Field 'ServiceOrderId' is Required.")]
-    int ServiceOrderId
+    [property: Required(ErrorMessage = "O ID da Ordem de Serviço é obrigatório")]
+    Guid serviceOrderId
 )
 {
     public OrderItem ToDomain() => new OrderItem(
-        Description,
-        Price,
-        ServiceOrderId
+        description,
+        price,
+        serviceOrderId
     );
 }

@@ -1,4 +1,4 @@
-﻿using AutoManager.Domain.Common;
+using AutoManager.Domain.Common;
 using AutoManager.Domain.Enums;
 
 namespace AutoManager.Domain.Entities;
@@ -9,10 +9,10 @@ public class Payment : BaseEntity
     
     public PaymentMethodEnum Method { get; private set; }
 
-    public int ServiceOrderId { get; private set; }
-    public ServiceOrder ServiceOrder { get; private set; } 
+    public Guid ServiceOrderId { get; private set; }
+    public ServiceOrder ServiceOrder { get; private set; } = null!;
 
-    public Payment(decimal totalAmount, PaymentMethodEnum method, int serviceOrderId)
+    public Payment(decimal totalAmount, PaymentMethodEnum method, Guid serviceOrderId)
     {
         if (totalAmount <= 0)
             throw new Exception("The total amount must be greater than zero.");

@@ -1,23 +1,19 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using AutoManager.Domain.Entities;
 using AutoManager.Domain.Enums;
 
 namespace AutoManager.Application.DTOs;
 
 public record ServiceOrderRequest(
-    [Required(ErrorMessage = "The field Date is required.")]
-    DateTime EntryDate,
+    [property: Required(ErrorMessage = "A data de entrada é obrigatória")]
+    DateTime entryDate,
 
-    [Required(ErrorMessage = "The field Status is required.")]
-    ServiceOrderStatusEnum Status,
-
-    [Required(ErrorMessage = "The field Vehicle is required.")]
-    int VehicleId
+    [property: Required(ErrorMessage = "O ID do veículo é obrigatório")]
+    Guid vehicleId
 )
 {
     public ServiceOrder ToDomain() => new ServiceOrder(
-        EntryDate,
-        Status,
-        VehicleId
+        entryDate,
+        vehicleId
     );
 }
