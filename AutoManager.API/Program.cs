@@ -1,3 +1,8 @@
+using Microsoft.EntityFrameworkCore;
+using AutoManager.Application.Services;
+using AutoManager.Infrastructure;
+using AutoManager.Infrastructure.Persistence;
+
 namespace AutoManager;
 
 public class Program
@@ -6,25 +11,25 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        // Add services to the container.
+        // 1. Configurar Banco de Dados
+        builder.Services.AddDbContext<AutoManagerContext>(options =>
+            options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+        // 2. Registrar Repositórios (Injeção de Dependência)
+        builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 
         builder.Services.AddControllers();
-        // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
         builder.Services.AddOpenApi();
 
         var app = builder.Build();
 
-        // Configure the HTTP request pipeline.
         if (app.Environment.IsDevelopment())
         {
             app.MapOpenApi();
         }
 
-        app.UseHttpsRedirection();
-
+        // app.UseHttpsRedirection(); // Comentado para evitar problemas com portas locais
         app.UseAuthorization();
-
-
         app.MapControllers();
 
         app.Run();
