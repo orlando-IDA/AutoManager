@@ -1,0 +1,12 @@
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Domain\bin\Debug\net9.0\AutoManager.Domain.deps.json
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Domain\bin\Debug\net9.0\AutoManager.Domain.dll
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Domain\bin\Debug\net9.0\AutoManager.Domain.pdb
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Domain\obj\Debug\net9.0\AutoManager.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Domain\obj\Debug\net9.0\AutoManager.Domain.AssemblyInfoInputs.cache
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Domain\obj\Debug\net9.0\AutoManager.Domain.AssemblyInfo.cs
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Domain\obj\Debug\net9.0\AutoManager.Domain.csproj.CoreCompileInputs.cache
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Domain\obj\Debug\net9.0\AutoManager.Domain.sourcelink.json
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Domain\obj\Debug\net9.0\AutoManager.Domain.dll
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Domain\obj\Debug\net9.0\refint\AutoManager.Domain.dll
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Domain\obj\Debug\net9.0\AutoManager.Domain.pdb
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Domain\obj\Debug\net9.0\ref\AutoManager.Domain.dll

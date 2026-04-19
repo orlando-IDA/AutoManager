@@ -1,0 +1,16 @@
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\bin\Debug\net9.0\AutoManager.Application.deps.json
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\bin\Debug\net9.0\AutoManager.Application.dll
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\bin\Debug\net9.0\AutoManager.Application.pdb
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\bin\Debug\net9.0\AutoManager.Domain.dll
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\bin\Debug\net9.0\AutoManager.Domain.pdb
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\obj\Debug\net9.0\AutoManager.Application.csproj.AssemblyReference.cache
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\obj\Debug\net9.0\AutoManager.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\obj\Debug\net9.0\AutoManager.Application.AssemblyInfoInputs.cache
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\obj\Debug\net9.0\AutoManager.Application.AssemblyInfo.cs
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\obj\Debug\net9.0\AutoManager.Application.csproj.CoreCompileInputs.cache
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\obj\Debug\net9.0\AutoManager.Application.sourcelink.json
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\obj\Debug\net9.0\AutoMana.709F1FB6.Up2Date
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\obj\Debug\net9.0\AutoManager.Application.dll
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\obj\Debug\net9.0\refint\AutoManager.Application.dll
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\obj\Debug\net9.0\AutoManager.Application.pdb
+C:\Users\test\Documents\notes\Advanced Business Development with .NET\Shift\New\AutoManager\AutoManager.Application\obj\Debug\net9.0\ref\AutoManager.Application.dll
