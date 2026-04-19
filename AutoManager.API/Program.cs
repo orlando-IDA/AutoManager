@@ -18,6 +18,9 @@ public class Program
         // 2. Registrar Repositórios (Injeção de Dependência)
         builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
         builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
+        builder.Services.AddScoped<IServiceOrderRepository, ServiceOrderRepository>();
+        builder.Services.AddScoped<IOrderItemRepository, OrderItemRepository>();
+        builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 
         builder.Services.AddControllers();
         builder.Services.AddOpenApi();

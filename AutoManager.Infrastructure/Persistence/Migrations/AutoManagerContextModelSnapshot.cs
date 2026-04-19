@@ -65,10 +65,14 @@ namespace AutoManager.Infrastructure.Persistence.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Descricao");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("TEXT");
+                        .HasPrecision(10, 2)
+                        .HasColumnType("TEXT")
+                        .HasColumnName("Preco");
 
                     b.Property<Guid>("ServiceOrderId")
                         .HasColumnType("TEXT");
@@ -77,7 +81,7 @@ namespace AutoManager.Infrastructure.Persistence.Migrations
 
                     b.HasIndex("ServiceOrderId");
 
-                    b.ToTable("OrderItems");
+                    b.ToTable("ItemOrdemServico", (string)null);
                 });
 
             modelBuilder.Entity("AutoManager.Domain.Entities.Payment", b =>
