@@ -1,23 +1,23 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 using AutoManager.Domain.Entities;
 
 namespace AutoManager.Application.DTOs;
 
 public record CustomerRequest(
-    [Required(ErrorMessage = "The Field Name is Required.")]
-    [StringLength(100, MinimumLength = 3, ErrorMessage = "Name must be between 3 and 100 characters long.")]
-    string Name,
+    [property: Required(ErrorMessage = "O nome é obrigatório")]
+    [property: StringLength(100, MinimumLength = 3, ErrorMessage = "O nome deve ter entre 3 e 100 caracteres")]
+    string name,
 
-    [Required(ErrorMessage = "The Field CPF is Required.")]
-    [StringLength(14, MinimumLength = 11, ErrorMessage = "CPF must be between 11 and 14 characters long.")]
-    string Cpf,
+    [property: Required(ErrorMessage = "O CPF é obrigatório")]
+    [property: StringLength(14, MinimumLength = 11, ErrorMessage = "O CPF deve ter entre 11 e 14 caracteres")]
+    string cpf,
     
-    string? Phone
+    string? phone
 )
 {
     public Customer ToDomain() => new Customer(
-        Name,
-        Cpf,
-        Phone
+        name,
+        cpf,
+        phone
     );
 }

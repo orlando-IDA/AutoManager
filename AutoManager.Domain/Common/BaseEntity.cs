@@ -1,8 +1,8 @@
-﻿namespace AutoManager.Domain.Common;
+namespace AutoManager.Domain.Common;
 
 public abstract class BaseEntity
 {
-    public int Id { get; protected set; } 
+    public Guid Id { get; private set; } = Guid.NewGuid();
 
     public bool Active { get; protected set; } = true;
 
